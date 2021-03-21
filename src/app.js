@@ -11,7 +11,7 @@ const {db} = require('./db/models')
 //     console.log("server is stared on https://localhost:4444")
 // })
 
-db.sync()
+db.sync({force:true})
    .then(()=>{
       app.listen(4444,()=>{
           console.log('server started on https://localhost:4444')
