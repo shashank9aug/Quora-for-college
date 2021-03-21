@@ -1,0 +1,24 @@
+{
+  "name": "quora_for_college",
+  "version": "1.0.0",
+  "description": "># Quora for college\r ## ⚡techstack used \r ```\r   - Html\r   - CSS\r   - Javascript\r   - NodeJS\r   - ExpressJS\r   - Sequelize(ORM)\r ```",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shashank-001/Quora-for-college.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shashank-001/Quora-for-college/issues"
+  },
+  "homepage": "https://github.com/shashank-001/Quora-for-college#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mysql2": "^2.2.5",
+    "sequelize": "^6.5.1"
+  }
+}
