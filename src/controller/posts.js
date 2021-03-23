@@ -7,14 +7,14 @@ async function createNewPosts(userId,title,body){
     const post = await Posts.create({
         title,
         body,
-        userId
+        userId,
     })   
-   return post; 
+   return post 
 }
 
 // we can use username, title to show all the posts. 
 
-async function showAllPosts(query){
+async function findAllPosts(query){
     const posts = await Posts.findAll({
         include : [Users]
     })
@@ -26,7 +26,7 @@ async function showAllPosts(query){
 
 module.exports = {
     createNewPosts,
-    showAllPosts
+    findAllPosts
 }
 
 

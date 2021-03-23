@@ -1,6 +1,11 @@
 const express = require('express')
 const app = express()
 
+
+//for working of post request
+app.use(express.json())
+app.use(express.urlencoded({extended:true}))
+
 // const db = require('./db/models');
 // const db = models.db;
 const {db} = require('./db/models')

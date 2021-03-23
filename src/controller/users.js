@@ -6,7 +6,6 @@ async function createAnonUser(){
     const user = await Users.create({
         username:genRandomUsername()        
     })
-
     return user
 } 
 
