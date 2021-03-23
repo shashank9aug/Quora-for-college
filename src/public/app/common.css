@@ -1,0 +1,10 @@
+.footer{
+    padding: 3rem;
+    position: sticky;
+    bottom: 0px;
+    height: 50px;
+} 
+
+.content {
+    min-height: calc(100vh - 70px);
+  }
