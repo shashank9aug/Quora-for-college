@@ -11,6 +11,7 @@ body{
 }
 
 nav{
+    position: sticky;
    background: #0082e6;
    height: 80px;
    width: 100%; 
@@ -99,11 +100,12 @@ a.active,a:hover{
     }
 }
 
-/* html, body {
+/* html, body 
+{
     height: 100%;
     margin: 0;
-  }
-  .content {
+}*/
+.content {
     padding: 20px;
     min-height: 100%;
     margin: 0 auto -50px;
@@ -111,18 +113,5 @@ a.active,a:hover{
   .footer,
   .push {
     height: 50px;
-  }  */
-
-  html, body {
-    height: 100%;
-  }
-  body {
-    display: flex;
-    flex-direction: column;
-  }
-  .content {
-    flex: 1 0 auto;
-  }
-  .footer {
-    flex-shrink: 0;
-  }
+    position: sticky;
+}  

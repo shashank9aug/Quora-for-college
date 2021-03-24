@@ -1,10 +1,36 @@
-.footer{
-    padding: 3rem;
+.py-3 {
     position: sticky;
-    bottom: 0px;
-    height: 50px;
-} 
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+}
 
-.content {
-    min-height: calc(100vh - 70px);
-  }
+.text-muted {
+    color: #6c757d !important;
+}
+
+.container {
+    text-align: center;
+    z-index: 1;
+    width: auto;
+    max-width: 680px;
+    padding: 0 15px;
+}
+.mt-auto {
+    
+    margin-top: 490px !important;
+}
+
+.bg-light {
+    background-color: #f8f9fa !important;
+}
+
+#content{
+    height: 2000px;
+}
+footer{
+   
+    display: block;
+}
+
+
+  
