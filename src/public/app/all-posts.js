@@ -17,9 +17,9 @@ function loadPosts() {
               </div>
             </div>
           </div>
-          
           `)
         )
       }
-    })
+    }
+  )
 }

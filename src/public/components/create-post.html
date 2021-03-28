@@ -1,23 +1,49 @@
-<div class="container my-2">
-    <h1 class="h1 text-center">Write Post</h1>
+<form action="/" method="post">
+ <div class="container">
+   <!-- <h3 style="text-align: center;">create-post</h3> -->
+   <div class="write-post">
+     <input id="title"  type="text" placeholder="Title Post....">
+     <br>
+      <textarea placeholder="Post-Description...." name="content" id="postData" cols="40" rows="10"></textarea>
+      <br>
+     <button type="submit">Post</button>
+    </div>
+  </div>   
+</form>
+
+
+<style>
+  .container{
+    margin: 40px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     width: 500px;
+     height: 400px;
+     border: 10px solid blue;
+  }
+  .write-post{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
+  }
+  #title{
+    width:300px;
+    padding: 10px;
+    border: 5px solid bisque;
+    margin: 10px;
+  }
+  #postData{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 5px solid bisque;
+    
+  }
+  button{
+    margin: 10px;
+    border: 2px solid blue;
+  }
+</style>
   
-    <!-- Write Post form -->
-    <form>
-      <div class="form-group">
-        <label for="exampleInputEmail1">Email address</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-      </div>
-      <div class="form-group">
-        <label for="exampleInputPassword1">Password</label>
-        <input type="password" class="form-control" id="exampleInputPassword1">
-      </div>
-      <div class="form-group form-check">
-        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-        <label class="form-check-label" for="exampleCheck1">Check me out</label>
-      </div>
-      <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
-  </div>
-  
-  <script src="/app/write-post.js"></script>
+<script src="/app/write-post.js"></script>

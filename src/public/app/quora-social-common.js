@@ -2,9 +2,7 @@ $(()=>{
     $('#navbar').load('/components/navbar.html',LoginIfNeeded)
     $('#footer').load('/components/footer.html')
 //     $('#navbar').load('/components/navbar.html')
-    $('#content').load('/components/all-articles.html')
-    
-  
+    $('#content').load('/components/all-posts.html')
 })
 
 
@@ -20,8 +18,6 @@ function LoginIfNeeded(){
             
                 $('#nav-username').text(currentUser.username)
             }
-
-
         })
     } else{
         console.log('resuming session as ',currentUser.username)
